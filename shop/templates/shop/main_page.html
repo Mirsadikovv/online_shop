@@ -1,0 +1,37 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}{{category_pk}}{% endblock %}
+
+
+{% block content %}
+    <div class="category">
+        <aside>
+{% for i in category %}
+        <div>
+        <ul><li> <h2><a href="{% url 'main_page_category' category_pk=i.pk  %}">{{i.name}}</a></h2> </li> </ul>
+        </div>
+{% endfor %}
+<ul><li> <h2><a href="{% url 'to_basket' %}">Basket</a></h2> </li> </ul>
+        </aside>
+    </div>
+
+
+<div class="products">
+
+{% for i in content %}
+    <div class="prod">
+        <h2>{{i}}</h2>
+        
+            <a href="{% url 'change_category' product_id=i.id %}">Изменить категорию</a>
+         
+    </div>
+{% endfor %}
+
+</div>
+
+
+
+
+    
+
+{% endblock %}

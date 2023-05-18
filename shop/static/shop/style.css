@@ -1,0 +1,27 @@
+/* *{background-color: aqua;} */
+.category{
+    background-color: #7a9ce0;
+    /* float: left; */
+    height: 100px;
+    width: 600px;
+    padding: 2.5%;
+    border-bottom: 10px solid #4d4d4d;
+    border-left: 20px solid rgb(113, 91, 91);
+    border-right: 20px solid rgb(113, 91, 91);
+    border-top: 10px solid #4d4d4d;;
+}
+  aside {
+    display: flex;
+  }
+
+
+/***********************************************************************************/
+
+
+.products .prod {
+    border: 3px solid black;
+    padding: 7px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 200px;
+  }
